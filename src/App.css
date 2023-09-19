@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+body {
+    margin:0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* LETRAS */
+/* 
+font-family: 'Bangers', cursive;
+font-family: 'Bungee Shade', cursive;
+font-family: 'Wix Madefor Display', sans-serif; */
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-container h1{
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    color: #BF0B3B; 
+    font-size: 7rem; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footer{
+    text-align: center;
+    margin-top: 50%;
+    color: #BF0B3B;
+    font-family: 'Wix Madefor Display', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.link{
+    background-color: #F2B90C;
+    color: black;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 2rem;
+    font-family: 'Wix Madefor Display', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.options-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30%;
+}
+
+.link-options{
+    text-align: center;
+    margin: 20% 10%;
+    width: 150px;
+    background: rgb(213,13,217);
+    background: linear-gradient(90deg, rgba(213,13,217,1) 16%, rgba(242,116,5,1) 86%);
+    text-decoration: none;
+    color: white;
+    font-family: 'Bangers', cursive;
+    border-radius: 15px;
+    padding: 50px;
+    font-size: 2rem;
+    box-shadow: 5px 6px 5px 0px rgba(145,140,140,0.75);
+}
+
+/* TO DO AND TO SHOP */
+
+.list-container h2{
+    text-align: center;
+    font-size: 4rem;
+    color: #D50DD9;
+    font-family: 'Bangers', cursive; 
+}
+
+.list-container .router-container{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.router-container .link-1{
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.form .input{
+    border: none;
+    border-bottom: 1.5px solid green;
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.form .button{
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    width: 50%;
+    padding: 2%;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 5px 6px 5px 0px rgba(145,140,140,0.75);
+    background: rgb(213,13,217);
+    background: linear-gradient(90deg, rgba(213,13,217,1) 16%, rgba(242,116,5,1) 86%);
+}
+
+/* ITEMS */
+
+.item-list{
+    margin: 0 auto;
+}
+
+.item-container{
+    margin-left: -50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+    gap: 5%;
+}
+
+.item-container .item-word{
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 2rem;
+    margin-left: 50px;
+}
+
+.item-container .item-button{
+    margin-right: 50px;
+    border-radius: 15px;
+    padding: 5%;
+    border: none;
+    background-color: #238C2A;
+
 }
